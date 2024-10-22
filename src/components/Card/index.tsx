@@ -12,7 +12,7 @@ type CardProps = {
 
 const Card = ({ title, description, avatar, thumbnail, name, tag }: CardProps) => {
   return (
-    <div className="group flex flex-col w-full max-w-96 p-5 gap-6 bg-white border border-gray-950 rounded-[20px] card-shadow">
+    <div className="group flex flex-col w-full max-w-96 p-6 gap-6 bg-white border border-gray-950 rounded-[20px] card-shadow">
       <img className="rounded-[10px]" src={thumbnail} alt={title} />
       <div className="flex flex-col gap-3 items-start">
         <Tag label={tag} />
